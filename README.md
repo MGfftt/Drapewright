@@ -32,6 +32,29 @@
 - **产物是一个"包"，不是一个文件。** 见下文的作业目录。
 
 
+## 效果
+
+**1. 一张街拍 → 纸样 → 布料垂坠。** 左：输入；右：GCrc 生成的纸样 + Blender 布料仿真（正面）。
+
+![输入照片与垂坠结果对比](docs/screenshots/blacktee_compare.png)
+
+**2. 浏览器面板。** 左边是作业列表，中间是模型写的服装描述（可以改），右边是产物：2D 纸样、网格预览、三视图仿真、`.glb` / `.blend` 下载。
+
+![Garment Studio 面板](docs/screenshots/panel_accept.png)
+
+**3. Blender 侧栏插件。** 装好 `gcstudio` 后，3D 视图侧栏出现 `GC Studio`：生成纸样 / 布料仿真 / 载入结果，结果以 `GC_` 前缀对象落进场景。
+
+![Blender 里的 GC Studio 侧栏](docs/screenshots/blender_accept.png)
+
+**4. 袖子：修复前后。** 左：v1 袖片塌进躯干；右：v2 把袖片卷到手臂圆柱上（170° 包角，不重叠）。
+
+![袖子 v1 与 v2 对比](docs/screenshots/sleeve_before_after.png)
+
+**5. 一个做不到的款式（诚实记录）。** 想复刻三层蛋糕短裙，`SkirtLevels` 的层高固定，裙长最短也到脚踝；最终换成 `Skirt2` + 抽褶交差。左：参考图；中：三层尝试；右：交付版。
+
+![三层短裙的尝试与替代方案](docs/screenshots/tiered_compare.png)
+
+
 ## 快速开始（Windows）
 
 前置：Python 3.11、Blender 4.x/5.x、NVIDIA 显卡（可选，布料仿真纯 CPU 也能跑）。
