@@ -1,0 +1,557 @@
+{
+ "version": "5.2.4 LTS Release Candidate",
+ "up_container": "win32",
+ "cloth_settings": [
+  [
+   "goal_min",
+   "Goal Minimum",
+   "FLOAT"
+  ],
+  [
+   "goal_max",
+   "Goal Maximum",
+   "FLOAT"
+  ],
+  [
+   "goal_default",
+   "Goal Default",
+   "FLOAT"
+  ],
+  [
+   "goal_spring",
+   "Goal Stiffness",
+   "FLOAT"
+  ],
+  [
+   "goal_friction",
+   "Goal Damping",
+   "FLOAT"
+  ],
+  [
+   "internal_friction",
+   "Internal Friction",
+   "FLOAT"
+  ],
+  [
+   "collider_friction",
+   "Collider Friction",
+   "FLOAT"
+  ],
+  [
+   "density_target",
+   "Target Density",
+   "FLOAT"
+  ],
+  [
+   "density_strength",
+   "Target Density Strength",
+   "FLOAT"
+  ],
+  [
+   "mass",
+   "Vertex Mass",
+   "FLOAT"
+  ],
+  [
+   "vertex_group_mass",
+   "Pin Vertex Group",
+   "STRING"
+  ],
+  [
+   "gravity",
+   "Gravity",
+   "FLOAT"
+  ],
+  [
+   "air_damping",
+   "Air Damping",
+   "FLOAT"
+  ],
+  [
+   "pin_stiffness",
+   "Pin Stiffness",
+   "FLOAT"
+  ],
+  [
+   "quality",
+   "Quality",
+   "INT"
+  ],
+  [
+   "time_scale",
+   "Speed",
+   "FLOAT"
+  ],
+  [
+   "vertex_group_shrink",
+   "Shrink Vertex Group",
+   "STRING"
+  ],
+  [
+   "shrink_min",
+   "Shrink Factor",
+   "FLOAT"
+  ],
+  [
+   "shrink_max",
+   "Shrink Factor Max",
+   "FLOAT"
+  ],
+  [
+   "voxel_cell_size",
+   "Voxel Grid Cell Size",
+   "FLOAT"
+  ],
+  [
+   "tension_damping",
+   "Tension Spring Damping",
+   "FLOAT"
+  ],
+  [
+   "compression_damping",
+   "Compression Spring Damping",
+   "FLOAT"
+  ],
+  [
+   "shear_damping",
+   "Shear Spring Damping",
+   "FLOAT"
+  ],
+  [
+   "tension_stiffness",
+   "Tension Stiffness",
+   "FLOAT"
+  ],
+  [
+   "tension_stiffness_max",
+   "Tension Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "compression_stiffness",
+   "Compression Stiffness",
+   "FLOAT"
+  ],
+  [
+   "compression_stiffness_max",
+   "Compression Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "shear_stiffness",
+   "Shear Stiffness",
+   "FLOAT"
+  ],
+  [
+   "shear_stiffness_max",
+   "Shear Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "sewing_force_max",
+   "Sewing Force Max",
+   "FLOAT"
+  ],
+  [
+   "vertex_group_structural_stiffness",
+   "Structural Stiffness Vertex Group",
+   "STRING"
+  ],
+  [
+   "vertex_group_shear_stiffness",
+   "Shear Stiffness Vertex Group",
+   "STRING"
+  ],
+  [
+   "bending_stiffness",
+   "Bending Stiffness",
+   "FLOAT"
+  ],
+  [
+   "bending_stiffness_max",
+   "Bending Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "bending_damping",
+   "Bending Spring Damping",
+   "FLOAT"
+  ],
+  [
+   "use_sewing_springs",
+   "Sew Cloth",
+   "BOOLEAN"
+  ],
+  [
+   "vertex_group_bending",
+   "Bending Stiffness Vertex Group",
+   "STRING"
+  ],
+  [
+   "effector_weights",
+   "Effector Weights",
+   "POINTER"
+  ],
+  [
+   "rest_shape_key",
+   "Rest Shape Key",
+   "POINTER"
+  ],
+  [
+   "use_dynamic_mesh",
+   "Dynamic Base Mesh",
+   "BOOLEAN"
+  ],
+  [
+   "bending_model",
+   "Bending Model",
+   "ENUM"
+  ],
+  [
+   "use_internal_springs",
+   "Create Internal Springs",
+   "BOOLEAN"
+  ],
+  [
+   "internal_spring_normal_check",
+   "Check Internal Spring Normals",
+   "BOOLEAN"
+  ],
+  [
+   "internal_spring_max_length",
+   "Internal Spring Max Length",
+   "FLOAT"
+  ],
+  [
+   "internal_spring_max_diversion",
+   "Internal Spring Max Diversion",
+   "FLOAT"
+  ],
+  [
+   "internal_tension_stiffness",
+   "Tension Stiffness",
+   "FLOAT"
+  ],
+  [
+   "internal_tension_stiffness_max",
+   "Tension Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "internal_compression_stiffness",
+   "Compression Stiffness",
+   "FLOAT"
+  ],
+  [
+   "internal_compression_stiffness_max",
+   "Compression Stiffness Maximum",
+   "FLOAT"
+  ],
+  [
+   "vertex_group_intern",
+   "Internal Springs Vertex Group",
+   "STRING"
+  ],
+  [
+   "use_pressure",
+   "Use Pressure",
+   "BOOLEAN"
+  ],
+  [
+   "use_pressure_volume",
+   "Use Custom Volume",
+   "BOOLEAN"
+  ],
+  [
+   "uniform_pressure_force",
+   "Pressure",
+   "FLOAT"
+  ],
+  [
+   "target_volume",
+   "Target Volume",
+   "FLOAT"
+  ],
+  [
+   "pressure_factor",
+   "Pressure Scale",
+   "FLOAT"
+  ],
+  [
+   "fluid_density",
+   "Fluid Density",
+   "FLOAT"
+  ],
+  [
+   "vertex_group_pressure",
+   "Pressure Vertex Group",
+   "STRING"
+  ]
+ ],
+ "cloth_collision_settings": [
+  [
+   "use_collision",
+   "Enable Collision",
+   "BOOLEAN"
+  ],
+  [
+   "distance_min",
+   "Minimum Distance",
+   "FLOAT"
+  ],
+  [
+   "friction",
+   "Friction",
+   "FLOAT"
+  ],
+  [
+   "damping",
+   "Restitution",
+   "FLOAT"
+  ],
+  [
+   "collision_quality",
+   "Collision Quality",
+   "INT"
+  ],
+  [
+   "impulse_clamp",
+   "Impulse Clamping",
+   "FLOAT"
+  ],
+  [
+   "use_self_collision",
+   "Enable Self Collision",
+   "BOOLEAN"
+  ],
+  [
+   "self_distance_min",
+   "Self Minimum Distance",
+   "FLOAT"
+  ],
+  [
+   "self_friction",
+   "Self Friction",
+   "FLOAT"
+  ],
+  [
+   "collection",
+   "Collision Collection",
+   "POINTER"
+  ],
+  [
+   "vertex_group_self_collisions",
+   "Selfcollision Vertex Group",
+   "STRING"
+  ],
+  [
+   "vertex_group_object_collisions",
+   "Collision Vertex Group",
+   "STRING"
+  ],
+  [
+   "self_impulse_clamp",
+   "Impulse Clamping",
+   "FLOAT"
+  ]
+ ],
+ "point_cache": [
+  [
+   "frame_start",
+   "Start",
+   "INT"
+  ],
+  [
+   "frame_end",
+   "End",
+   "INT"
+  ],
+  [
+   "frame_step",
+   "Cache Step",
+   "INT"
+  ],
+  [
+   "use_disk_cache",
+   "Disk Cache",
+   "BOOLEAN"
+  ],
+  [
+   "is_frame_skip",
+   "",
+   "BOOLEAN"
+  ],
+  [
+   "point_caches",
+   "Point Cache List",
+   "COLLECTION"
+  ]
+ ],
+ "interesting": [
+  "air_damping",
+  "bending_damping",
+  "bending_model",
+  "bending_stiffness",
+  "bending_stiffness_max",
+  "collider_friction",
+  "compression_damping",
+  "compression_stiffness",
+  "compression_stiffness_max",
+  "effector_weights",
+  "goal_friction",
+  "gravity",
+  "internal_compression_stiffness",
+  "internal_compression_stiffness_max",
+  "internal_friction",
+  "internal_tension_stiffness",
+  "internal_tension_stiffness_max",
+  "mass",
+  "pin_stiffness",
+  "quality",
+  "sewing_force_max",
+  "shear_damping",
+  "tension_damping",
+  "tension_stiffness",
+  "tension_stiffness_max",
+  "time_scale",
+  "use_sewing_springs",
+  "vertex_group_bending",
+  "vertex_group_intern",
+  "vertex_group_mass",
+  "vertex_group_pressure",
+  "vertex_group_shear_stiffness",
+  "vertex_group_shrink",
+  "vertex_group_structural_stiffness"
+ ],
+ "mesh_ops_with_sew": [],
+ "obj_ops_with_sew": [],
+ "cloth_ops": [
+  "preset_add"
+ ],
+ "collision_modifier": [
+  [
+   "use",
+   "Enabled",
+   "BOOLEAN"
+  ],
+  [
+   "damping_factor",
+   "Damping Factor",
+   "FLOAT"
+  ],
+  [
+   "damping_random",
+   "Random Damping",
+   "FLOAT"
+  ],
+  [
+   "friction_factor",
+   "Friction Factor",
+   "FLOAT"
+  ],
+  [
+   "friction_random",
+   "Random Friction",
+   "FLOAT"
+  ],
+  [
+   "permeability",
+   "Permeability",
+   "FLOAT"
+  ],
+  [
+   "use_particle_kill",
+   "Kill Particles",
+   "BOOLEAN"
+  ],
+  [
+   "stickiness",
+   "Stickiness",
+   "FLOAT"
+  ],
+  [
+   "thickness_inner",
+   "Inner Thickness",
+   "FLOAT"
+  ],
+  [
+   "thickness_outer",
+   "Outer Thickness",
+   "FLOAT"
+  ],
+  [
+   "damping",
+   "Damping",
+   "FLOAT"
+  ],
+  [
+   "absorption",
+   "Absorption",
+   "FLOAT"
+  ],
+  [
+   "cloth_friction",
+   "Friction",
+   "FLOAT"
+  ],
+  [
+   "use_culling",
+   "Single Sided",
+   "BOOLEAN"
+  ],
+  [
+   "use_normal",
+   "Override Normals",
+   "BOOLEAN"
+  ]
+ ],
+ "solidify_props": [
+  "bevel_convex",
+  "edge_crease_inner",
+  "edge_crease_outer",
+  "edge_crease_rim",
+  "execution_time",
+  "invert_vertex_group",
+  "is_active",
+  "is_override_data",
+  "material_offset",
+  "material_offset_rim",
+  "name",
+  "nonmanifold_boundary_mode",
+  "nonmanifold_merge_threshold",
+  "nonmanifold_thickness_mode",
+  "offset",
+  "persistent_uid",
+  "rim_vertex_group",
+  "rna_type",
+  "shell_vertex_group",
+  "show_expanded",
+  "show_in_editmode",
+  "show_on_cage",
+  "show_render",
+  "show_viewport",
+  "solidify_mode",
+  "thickness",
+  "thickness_clamp",
+  "thickness_vertex_group",
+  "type",
+  "use_apply_on_spline",
+  "use_even_offset",
+  "use_flat_faces",
+  "use_flip_normals",
+  "use_pin_to_last",
+  "use_quality_normals",
+  "use_rim",
+  "use_rim_only",
+  "use_thickness_angle_clamp",
+  "vertex_group"
+ ],
+ "cloth_has_pin_group": [
+  "air_damping",
+  "pin_stiffness",
+  "tension_damping",
+  "compression_damping",
+  "shear_damping",
+  "bending_damping"
+ ]
+}

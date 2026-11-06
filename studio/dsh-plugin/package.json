@@ -1,0 +1,24 @@
+{
+  "name": "dsh-garment-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Garment Studio sidebar panel for DSH: shows the local studio panel and relays approved descriptions back into the chat session",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

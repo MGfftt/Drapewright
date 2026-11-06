@@ -1,0 +1,74 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+# Log
+*.log
+*.log.*
+*.jsonl
+
+# Data
+!**/alpaca-data-conversation.json
+
+# Editor
+.idea
+*.swp
+
+# Other
+.DS_Store
+wandb
+output
+
+checkpoints
+ckpts*
+
+.ipynb_checkpoints
+*.ipynb
+
+# DevContainer
+!.devcontainer/*
+
+# Demo
+serve_images/
+
+runs
+assets
+playground
+
+# =====================================================================
+# LOCAL WINDOWS SETUP (added by the environment setup, not upstream).
+# Everything listed below is regenerable or third-party: deleting these
+# paths does NOT damage the project source code.
+# NOTE: git does not allow trailing comments in this file; keep the
+# explanations above each pattern.
+# =====================================================================
+
+# python virtual env, recreate with win/README.md (section 3.1)
+.venv/
+# pip cache
+.pip-cache/
+# pip TMPDIR, must live inside the workspace on this box
+.tmp/
+# cloned/extracted third-party deps (GarmentCodeRC, ...)
+repos/
+# pygarment outputs
+Logs/
+# downloaded archives and partial download parts
+*.zip
+*.parts/
+# 62 MB of upstream README animations, kept on disk but untracked
+docs/images/*.gif
+
+# ---- Drapewright ----
+# job workspace and simulation runs are regenerable, never commit them
+studio/jobs/
+studio/runs/
+studio/_probe/
+*.blend
+*.glb
+*.mp4
+
+# local tooling caches
+torchinductor_*/

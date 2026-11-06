@@ -1,0 +1,8 @@
+{
+  "wholebody_garment": {
+    "meta": {"upper": "FittedShirt", "wb": null, "bottom": "Skirt2"},
+    "shirt": {"strapless": true, "length": [SEG], "width": [SEG], "flare": [SEG]},
+    "skirt": {"length": [SEG], "rise": [SEG], "ruffle": [SEG], "bottom_cut": [SEG]},
+    "left": {"enable_asym": false}
+  }
+}

@@ -1,0 +1,42 @@
+# ChatGarment on Windows / RTX 50-series (sm_120) - runtime requirements
+# torch + torchvision are installed separately from local wheels (see win/README.md).
+# Everything else is pinned to the versions the upstream repo expects
+# (pyproject.toml), except where a newer version is required for the newer torch.
+
+# --- fast / numerics ---
+numpy==1.26.4
+scipy
+scikit-learn==1.2.2
+pillow
+
+# --- transformers stack (pinned by upstream) ---
+transformers==4.37.2
+tokenizers==0.15.1
+sentencepiece==0.1.99
+accelerate==0.32.0
+peft==0.10.0
+huggingface_hub==0.23.5
+safetensors
+protobuf<5          # transformers 4.37 needs protobuf <5 for some tokenizers
+# --- 4-bit inference (essential: the 7B model does not fit in 8 GB VRAM in bf16) ---
+bitsandbytes==0.50.2      # pure pip install, ships its own CUDA DLLs, works on sm_120
+
+# --- vision / utils ---
+timm==0.6.13
+einops==0.6.1
+einops-exts==0.0.4
+opencv-python-headless==4.10.0.84
+easydict
+PyYAML
+tqdm
+requests
+shortuuid
+pydantic
+markdown2[all]
+psutil
+tensorboard
+svgwrite
+svgpathtools
+cairosvg              # PNG of the patterns (needs the bundled cairo DLLs, see win/README.md 3.3)
+matplotlib
+trimesh

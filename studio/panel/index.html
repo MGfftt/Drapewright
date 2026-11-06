@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garment Studio</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="logo">GS</div>
+      <div>
+        <div class="brand-title">Garment Studio</div>
+        <div class="brand-sub">纸样 · 3D 预览</div>
+      </div>
+      <button id="refresh" title="刷新">⟳</button>
+    </div>
+    <div id="joblist" class="joblist"></div>
+    <div class="sidebar-foot">
+      <span id="server-state">连接中…</span>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="empty" class="empty">
+      <h2>还没有款式</h2>
+      <p>在聊天里让模型用你的图片起一个款式，它会出现在这里。</p>
+    </div>
+
+    <article id="detail" hidden>
+      <header class="detail-head">
+        <div>
+          <h1 id="job-title">—</h1>
+          <div class="meta">
+            <span id="job-stage" class="badge"></span>
+            <span id="job-time" class="dim"></span>
+            <span id="job-id" class="dim mono"></span>
+          </div>
+        </div>
+        <button id="open-folder" class="ghost" title="在资源管理器里打开这个作业">打开文件夹</button>
+      </header>
+
+      <div class="grid">
+        <section class="card input-card">
+          <h3>输入</h3>
+          <div id="input-wrap" class="input-wrap"></div>
+          <p id="job-notes" class="dim small"></p>
+        </section>
+
+        <section class="card desc-card">
+          <h3>服装描述 <span class="dim small">（可以随便改，改完点「按我改的来」）</span></h3>
+          <textarea id="desc" spellcheck="false" placeholder="模型会在这里写入文字描述…"></textarea>
+          <div class="actions">
+            <button id="btn-accept" class="primary">没问题，生成 JSON</button>
+            <button id="btn-edit" class="secondary">按我改的来</button>
+            <span id="approval-state" class="dim small"></span>
+          </div>
+        </section>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+
+      <section class="card">
+        <h3>产物</h3>
+        <div id="artifacts" class="artifacts"></div>
+      </section>
+
+      <section class="card">
+        <h3>日志 <span class="dim small">（最近 40 行）</span></h3>
+        <pre id="log" class="log"></pre>
+      </section>
+    </article>
+  </main>
+</div>
+<div id="toast" class="toast" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

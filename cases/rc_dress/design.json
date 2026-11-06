@@ -1,0 +1,37 @@
+{
+  "schema": "gcstudio/design/1",
+  "label": "抹胸短裙（复现 cases/rc_dress 的手给数字版本）",
+  "garment": {
+    "wholebody_garment": {
+      "meta": {
+        "upper": "FittedShirt",
+        "wb": null,
+        "bottom": "Skirt2"
+      },
+      "shirt": {
+        "strapless": true,
+        "length": null,
+        "width": null,
+        "flare": null
+      },
+      "skirt": {
+        "length": null,
+        "rise": null,
+        "ruffle": null,
+        "bottom_cut": null
+      },
+      "left": {
+        "enable_asym": false
+      }
+    }
+  },
+  "floats": {
+    "design.shirt.length": 0.2,
+    "design.shirt.width": 0.05,
+    "design.shirt.flare": 0,
+    "design.skirt.length": 0.12,
+    "design.skirt.rise": 0.85,
+    "design.skirt.ruffle": 1,
+    "design.skirt.bottom_cut": 0
+  }
+}

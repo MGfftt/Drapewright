@@ -1,0 +1,1 @@
+{'wholebody_garment': {'garment_name': 'Dress', 'geometry_styles': {'width': ['normal'], 'length': ['short'], 'sleeves': ['sleeveless'], 'skirt hems': ['ruffled hem'], 'collar': ['strapless'], 'extra': ['ruffled skirt', 'fitted bodice']}}}
